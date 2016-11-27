@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Time Log: Timer</title>
+    
+    <link rel="stylesheet" href="css/style_2.css">
+    <link rel="stylesheet" href="css/styleslide.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
+</head>
+<body>
+    
+    <div id="stopwatch">
+        
+        <button id="pop">&#10069;</button>
+        
+        <div id="popup">
+            
+            <button id="po" class="button1">X</button>
+            <h3 class="info">Welcome to Time Fource Time Log</h3>
+            <p class="info">Here you can record your time and record what you did fro that time.</p>
+            <br />
+            <hr>
+            <br />
+            <p class="info">
+                
+                HOW IT WORKS.
+                <br />
+                1) Hit the start button. Time will start to roll and you can start working.<br />
+                2) Once you have completed a task you can hit the "LOG TIME" button and a popup will apper, type anything you want like what
+                work you did. Once you have clicked "OK" it will go into a log and keep track of what you have done.<br />
+                3) When you are finished for the day you can hit the "DOWNLOAD LOG" button and it will take you to another page and show you
+                what you logged on the last page.<br />
+                4) when your ready hit the "DOWNLOAD" button and a Log.txt will be downloaded and you will have a log of your time.
+                <br />
+                <br />
+                <br />
+                Disclaimer: This program is still under development, if there is anything that you find is that is not working properly
+                or needs inprovments plaese contact me at cnwebdesign2016@gmail.com.
+                <br />
+                <br />
+                <br />
+                Please enjoy our Time Log 
+                <br />
+                From, Time Fource Team  
+            
+            </p>
+            
+            
+    
+            </div>
+        
+        <!-- Hidden -->
+        <p id="targetTime">Current Target: <span id="targetOutput">1</span> minute(s)</p>
+        <h1 id="output">0:0:0</h1>
+            <button id="startPause" class="startPause" onclick="startPause()">START</button>
+            <button class="reset" onclick="reset(); clearL(); cL()">RESET</button>
+            <!--<button class="endlog" onclick="add()">ENDLOG</button>-->
+        <!-- Hidden -->
+        <div id="bar-box">
+            <div id="bar">
+                <div id="progress"></div>
+            </div>
+        </div>
+            <button id="mstBtn" onclick="saveMilestone(); add()">LOG TIME</button>
+        <!-- Scroll for the time laps -->
+        <div id="scroll">
+        <div id="milestones">
+    <ol>
+      
+        
+        
+    </ol>
+            
+        </div>  
+        </div>
+        <a href="save.html"><button id="mstBtn">DOWNLOAD LOG</button></a>
+        <div id="demo"></div>
+        <h5 style="color:white;"> Created by Patrick Ingebretsen, Jonathan Duong, Rolfe Chappell, Cory Nelson</h5>
+    </div>    
+<script src="js/clock.js"></script>
+<script src="js/index.js"></script>
+
+    
+</body>
+</html>

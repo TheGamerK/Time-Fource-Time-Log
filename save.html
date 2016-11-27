@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Time Log: Download</title>
+    
+    
+    <link rel="stylesheet" href="css/styleslide.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body onload="myFunction()">
+    
+
+<div id="stopwatch">
+ 
+<!--<button class="myFunction" onclick="myFunction()">SHOW</button>-->
+<!--<button class="clearL" onclick="clearL()">CLEAR</button>--> 
+<button class="back" onclick="goBack1()">BACK</button>
+    <br />
+
+         
+
+    
+    <form onsubmit="download(this['name'].value, this['text'].value)">
+ 
+        <input type="text" name="name" value="Log.txt" readonly>
+  
+        <textarea id="demo" name="text" readonly></textarea>
+    
+    <input class="download" type="submit" value="DOWNLOAD" onclick="setTimeout(clearL, 1);setTimeout(goBack2, 10)">
+        <h3 style="color:white;">Warning: Once you hit the download button current log will get cleared!</h3>
+        
+    </form>
+    
+    <!--<p id="demo" class="text"></p>-->
+</div>
+<script src="js/clock.js"></script>
+<script src="js/index.js"></script>
+<script src="js/js.js"></script>
+    
+</body>
+</html>
